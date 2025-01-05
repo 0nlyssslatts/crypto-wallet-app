@@ -26,6 +26,7 @@ export function CryptoContextProvider({ children }) {
                 totalProfit:
                     asset.amount * coin.price -
                     asset.amount * parseFloat(asset.price),
+                name: coin.name,
                 ...asset,
             };
         });
